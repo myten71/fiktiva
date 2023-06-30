@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="OBJECTS" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Montserrat-Bold, 'Montserrat Bold';
+        font-size: 23.78px;
+        font-weight: 700;
+        letter-spacing: .2em;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-4 {
+        fill: #7edcb9;
+        font-family: Montserrat-Medium, 'Montserrat Medium';
+        font-size: 13.87px;
+        font-weight: 500;
+        letter-spacing: 1.2em;
+      }
+
+      .cls-5 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-7 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="194.32" cy="201.42" fx="194.32" fy="201.42" r="63.29" gradientTransform="translate(54.38 40.05) scale(.86 .9)" gradientUnits="userSpaceOnUse">
+      <stop offset=".17" stop-color="#4674b5"/>
+      <stop offset=".33" stop-color="#4877b5"/>
+      <stop offset=".49" stop-color="#4e83b5"/>
+      <stop offset=".66" stop-color="#5997b6"/>
+      <stop offset=".82" stop-color="#68b4b7"/>
+      <stop offset=".98" stop-color="#7bd7b8"/>
+      <stop offset="1" stop-color="#7edcb9"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient" x1="230.51" y1="215.34" x2="299.68" y2="215.34" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7edcb9"/>
+      <stop offset=".02" stop-color="#7bd7b8"/>
+      <stop offset=".18" stop-color="#68b4b7"/>
+      <stop offset=".34" stop-color="#5997b6"/>
+      <stop offset=".51" stop-color="#4e83b5"/>
+      <stop offset=".67" stop-color="#4877b5"/>
+      <stop offset=".83" stop-color="#4674b5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="1556.44" y1="175.47" x2="1605.88" y2="175.47" gradientTransform="translate(1880.21 421.26) rotate(-180)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8c0053"/>
+      <stop offset=".14" stop-color="#8f0651"/>
+      <stop offset=".32" stop-color="#99174c"/>
+      <stop offset=".53" stop-color="#a83345"/>
+      <stop offset=".76" stop-color="#bf5b3b"/>
+      <stop offset="1" stop-color="#db8d2e"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="1566.56" y1="152.18" x2="1635.73" y2="152.18" gradientTransform="translate(1880.21 421.26) rotate(-180)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#db8d2e"/>
+      <stop offset=".24" stop-color="#bf5b3b"/>
+      <stop offset=".47" stop-color="#a83345"/>
+      <stop offset=".68" stop-color="#99174c"/>
+      <stop offset=".86" stop-color="#8f0651"/>
+      <stop offset=".99" stop-color="#8c0053"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <g>
+      <path class="cls-5" d="m253.05,261.29c3.84,3.99,10.07,3.99,13.91,0h0c3.84-3.98,3.84-10.45,0-14.43l-29.77-30.9c-3.84-3.99-10.07-3.99-13.91,0h0c-3.84,3.98-3.84,10.45,0,14.43l17.61,18.24,12.16,12.67Z"/>
+      <path class="cls-7" d="m266.95,185.04c-3.84-3.99-10.07-3.99-13.91,0l-29.77,30.9c-3.76,3.9-4,10.01-.39,14.01l.15.17.2.21s.03.03.04.05c.02.02.03.03.05.05l17.56,18.21c-9.46-9.82,3.24-25.46,3.24-25.46h0s22.83-23.69,22.83-23.69c3.84-3.99,3.84-10.45,0-14.43Z"/>
+    </g>
+    <g>
+      <path class="cls-3" d="m291.12,223.12c-3.84-3.99-10.07-3.99-13.91,0h0c-3.84,3.98-3.84,10.45,0,14.43l29.78,30.9c3.84,3.99,10.07,3.99,13.91,0h0c3.84-3.99,3.84-10.45,0-14.43l-17.61-18.24-12.16-12.67Z"/>
+      <path class="cls-6" d="m277.21,299.38c3.84,3.99,10.07,3.98,13.91,0l29.77-30.9c3.76-3.9,4-10.01.39-14.01l-.15-.17-.2-.21s-.03-.03-.04-.05c-.01-.02-.03-.03-.05-.05l-17.56-18.21c9.46,9.82-3.24,25.46-3.24,25.46h0s-22.83,23.69-22.83,23.69c-3.84,3.98-3.84,10.45,0,14.43Z"/>
+    </g>
+    <path class="cls-2" d="m265.99,295.31c-1.57,5.21-6.91,8.11-11.93,6.48h0c-5.02-1.63-7.81-7.17-6.24-12.38l30.8-100.47c1.57-5.21,6.91-8.11,11.93-6.48h0c5.02,1.63,7.81,7.17,6.24,12.38l-30.8,100.47Z"/>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(193.16 329.98) scale(.96 1)"><tspan x="0" y="0">WILHELMSEN</tspan></text>
+    <text class="cls-4" transform="translate(242.94 352.27) scale(.96 1)"><tspan x="0" y="0">WEB</tspan></text>
+  </g>
+</svg>
