@@ -70,3 +70,14 @@ body {
     height:600px;
   }
 
+  .footer {
+    height:100px;
+    width:100%;
+    color:#100407;
+    z-index:999;
+  }
+
+
+.heading, .paragraf {
+    color:white;
+}
