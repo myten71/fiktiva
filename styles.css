@@ -127,16 +127,37 @@ body {
     align-items: center;
     height: calc(100vh - 150px);
   }
+
+  #kontaktformwrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 150px);
+  }
+
+  #map-container-google-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 150px);
+  }
   
   #blink {
     width: 600px;
     height: 600px;
   }
+
+  #input {
+    width:60%;
+  }
   
-  .footer {
-    height: 100px;
-    width: 100%;
-    color: #100407;
+  .footermain {
+ color:white;
+ position:sticky;
+ bottom:0;
+ left:0;
+ right:0;
+
   }
   
   .heading,
@@ -144,3 +165,41 @@ body {
     color: white;
     font-weight: lighter;
   }
+
+  @media (max-width: 1650px) {
+    #logo {
+      left: 10%;
+      position:absolute;
+    }
+  }
+  
+  @media (max-width: 1440px) {
+    #logo {
+        left: 10%;
+        position:absolute;
+    }
+  }
+
+  @media (max-width: 1360px) {
+    #logo {
+        left: 5%;
+        position:absolute;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    #logo {
+        left: 2.5%;
+        position:absolute;
+    }
+  }
+
+  @media (max-width: 1130px) {
+    #logo {
+        left: 0%;
+        position:absolute;
+    }
+  }
+  
+  
+  
