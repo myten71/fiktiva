@@ -310,6 +310,13 @@ body {
 }
 
 
+/* Referanser + karusell */
+#referanser {
+    height:500px;
+    width:500px;
+}
+
+
   /* Kontaktskjema - */ 
     /* Container styles */
     .container {
