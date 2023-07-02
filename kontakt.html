@@ -16,10 +16,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,400&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -40,7 +42,7 @@
           <div id="navcontainer" class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Hjem</a>
+                <a class="nav-link" aria-current="page" href="#">Hjem</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Om</a>
@@ -50,13 +52,13 @@
                   Tjenester
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Nettside</a></li>
+                  <li><a class="dropdown-item" href="#">Markedsføring</a></li>
+                  <li><a class="dropdown-item" href="#">SEO-optimalisering</a></li>
                 </ul>
               </div>
               <li class="nav-item">
-                <a class="nav-link" href="#">Kontakt</a>
+                <a class="nav-link active" href="#">Kontakt</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Referanser</a>
@@ -69,18 +71,33 @@
    <div id="kontaktformwrapper" class="container">
     <div class="row">
     <div id="input" class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      <div class="kontaktbio">
+        <h1 class="kontaktoss">Kontakt oss gjerne!</h1>
+        <p class="contactoss">Dersom du har spørsmål vedrørende våre tjenester, ønsker pristilbud eller har andre spørsmål så kan du benytte deg av kontaktskjemaet så vil vi komme tilbake til deg snarest.</p>
+        </div>
+        <form method="POST" action="kontakt.php"></form>
+      <label for="exampleFormControlInput1" class="form-label"><i id="emojis" class="fa-solid fa-user"></i> Navn</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="navn og etternavn">
     </div>
     <div id="input" class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+      <label for="exampleFormControlInput1" class="form-label"><i id="emojis" class="fa-solid fa-envelope"></i> E-post</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="navn@eksempel.no">
+    </div>
+    <div id="input" class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label"><i id="emojis" class="fa-solid fa-message"></i> Henvendelse</label>
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <button id="sendknapp" type="button" class="btn btn-primary">Send</button>
+    </form>
     </div>
     </div>
       <!--Google map-->
       <div class="row">
-<div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.468892710126!2d5.221222537578215!3d60.37528689588846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46390d4966767d77%3A0x9e42a03eb4de0a08!2sBergen!5e0!3m2!1sno!2sno!4v1688223864181!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="mapwrap">
+<div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 150px">
+  <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7885.6210371791785!2d5.3299651!3d60.388984099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cfea43b3317d3%3A0x583d19ca7af47f9!2sSentrum%2C%20Bergen!5e0!3m2!1sno!2sno!4v1688315800258!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      class="w-100" height="400" allowfullscreen="" loading="lazy"></iframe>
+</div>
 </div>
       </div>
     </div>
@@ -91,87 +108,87 @@
 
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-</body>
-<footer>
-
-<footer id="footer" class="text-center text-lg-start text-muted">
-
-
-    </section>
-    <!-- Section: Social media -->
-  
-    <!-- Section: Links  -->
-    <section class="footermain">
-      <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- Content -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-gem me-3"></i>Wilhelmsen Web
-            </h6>
-            <p>
-       Vi er åpen for oppdrag, kontakt oss gjerne ved spørsmål via vårt kontaktskjema.
-            </p>
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              Products
-            </h6>
-            <p>
-              <a href="#!" class="text-reset">Nettside</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">SEO-optimalisering</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Markedsføring</a>
-            </p>
- 
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              Lenker
-            </h6>
-            <p>
-              <a href="#!" class="text-reset">Hjem</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Tjenester</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Kontakt</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Om</a>
-            </p>
-          </div>
+  <div class="dividercontainer">
+    <span class="divider"></span></div>
+    <footer>
+      <footer id="footer" class="text-center text-lg-start text-muted">
+          </section>
+          <!-- Section: Social media -->
         
-  
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-            <p><i class="fas fa-home me-3"></i> Bergen, Vestland, Norge</p>
-            <p>
-              <i class="fas fa-envelope me-3"></i>
-              simennysaether@gmail.com
-            </p>
-            <p><i class="fas fa-phone me-3"></i> +47 40632668</p>
-          </div>
+          <!-- Section: Links  -->
+          <section class="footermain">
+            <div class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <!-- Content -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    <i class="fas fa-gem me-3"></i>Wilhelmsen Web
+                  </h6>
+                  <p>
+             Vi er åpen for oppdrag, kontakt oss gjerne ved spørsmål via vårt kontaktskjema.
+                  </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Tjenester
+                  </h6>
+                  <p>
+                    <a href="#!" class="text-reset">Nettside</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">SEO-optimalisering</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Markedsføring</a>
+                  </p>
        
-        </div>
-     
-      </div>
-    </section>
-  
-  
-  </footer>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Lenker
+                  </h6>
+                  <p>
+                    <a href="#!" class="text-reset">Hjem</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Tjenester</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Kontakt</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Om</a>
+                  </p>
+                </div>
+              
+        
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                  <p><i class="fas fa-home me-3"></i> Bergen, Vestland, Norge</p>
+                  <p>
+                    <i class="fas fa-envelope me-3"></i>
+                    simennysaether@gmail.com
+                  </p>
+                  <p><i class="fas fa-phone me-3"></i> +47 40632668</p>
+                </div>
+             
+              </div>
+           
+            </div>
+          </section>
+        
+        
+        </footer>
+</body>
+
 </html>
