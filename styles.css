@@ -312,38 +312,46 @@ body {
 
 /* Referanser + karusell */
 #referanser {
-    height:500px;
-    width:500px;
+height:800px;
+width:400px;
+ 
+    z-index:-1;
 }
+.carousel-image {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    z-index:-1;
+  }
 
 
   /* Kontaktskjema - */ 
-    /* Container styles */
+   
     .container {
         max-width: 600px;
         margin: 0 auto;
       }
     
-      /* Heading styles */
+
       .kontaktoss {
         font-size: 24px;
         margin-bottom: 10px;
       }
     
-      /* Paragraph styles */
+
       .contactoss {
         font-size: 16px;
         margin-bottom: 20px;
       }
     
-      /* Form label styles */
+
       .form-label {
         font-weight: bold;
         font-size: 18px;
         color:white;
       }
     
-      /* Form input styles */
+
       .form-control {
         width: 100%;
         padding: 10px;
@@ -353,12 +361,12 @@ body {
         margin-bottom: 10px;
       }
     
-      /* Form textarea styles */
+
       .form-control textarea {
         resize: vertical;
       }
     
-      /* Submit button styles */
+ 
       .submit-button {
         background-color: #4CAF50;
         color: white;
@@ -369,7 +377,7 @@ body {
         cursor: pointer;
       }
     
-      /* Submit button on hover */
+
       .submit-button:hover {
         background-color: #45a049;
       }
@@ -388,6 +396,9 @@ body {
       #sendknapp:hover {
         background-color:#538db6;
       }
+
+/* Media queries Logo plassering */
+
 
 
   @media (max-width: 1650px) {
@@ -424,6 +435,8 @@ body {
         position:absolute;
     }
   }
+
+
   
   
   
