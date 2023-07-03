@@ -182,12 +182,23 @@ body {
   }
   
 
-  #landing {
+  #landing, 
+  #landing2,
+  #landing3{
     display: flex;
     justify-content: start;
     align-items: center;
     height: calc(100vh - 150px);
+  } 
+
+  /* Ulike farger på de ulike tjenestene?
+  #landing2 {
+    width:100%;
+    color:blue;
   }
+
+  */
+
 
   #kontaktformwrapper {
     display: flex;
@@ -324,6 +335,31 @@ width:400px;
     z-index:-1;
   }
 
+  .carousel-item {
+    margin-left:100px;
+  }
+
+.cardwrapper {
+   position:absolute;
+   top:30%;
+   left:21%;
+}
+
+
+.stars {
+    color:gold;
+}
+
+#headshot1 {
+    max-height:170px;
+}
+  .card {
+    position:absolute;
+    z-index:999;
+    opacity:100%;
+    box-shadow: 5px 5px 5px 10px
+    
+  }
 
   /* Kontaktskjema - */ 
    
