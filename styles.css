@@ -14,7 +14,6 @@ body {
   }
   
   .nav-wrapper {
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -29,10 +28,10 @@ body {
     overflow: hidden;
     left: 18%;
     margin-bottom: 20px;
+    z-index:-10;
   }
   
   .nav {
-    display: flex;
     justify-content: center;
   }
   
@@ -47,9 +46,7 @@ body {
     text-decoration: none !important;
   }
   
-  #navcontainer {
-    margin-top: 15px;
-  }
+
   
   #tjenester {
     color: white;
@@ -60,11 +57,11 @@ body {
   }
   
   #navcontainer {
-    display: flex;
     justify-content: center;
     align-items: center;
     position: sticky;
     top: 0;
+     margin-top: 15px;
   }
 
   .navbar {
@@ -93,7 +90,7 @@ body {
     color: #d68530;
   }
 
-
+*/
   .navbar .dropdown-toggle {
     background-color: transparent;
     border: none;
@@ -182,6 +179,8 @@ body {
     outline: none !important;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
     color: transparent !important;
+    position:absolute;
+    right:2%;
   }
   
   .navbar-toggler-icon {
@@ -192,15 +191,8 @@ body {
   }
   
 
-  #landing, 
-  #landing2,
-  #landing3{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    height: calc(100vh - 150px);
-  } 
 
+  
   /* Ulike farger på de ulike tjenestene?
   #landing2 {
     width:100%;
