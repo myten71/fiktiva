@@ -90,7 +90,6 @@ body {
     color: #d68530;
   }
 
-*/
   .navbar .dropdown-toggle {
     background-color: transparent;
     border: none;
@@ -133,6 +132,128 @@ body {
     cursor: pointer;
   }
 
+
+  /* Mobile overlay Hamburger meny */
+
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    overflow: hidden;
+    background: #2d2d2d;
+    animation: fade-in 0.6s;
+  
+  }
+
+  /* Fade-in på hamburger fra høyre */
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+
+  .navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23a52d47' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    color: transparent !important;
+    position: absolute;
+    right: 2%;
+  }
+  
+  .navbar-toggler-icon {
+    border: none !important;
+    outline: none !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23a52d47' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    color: transparent !important;
+  }
+  
+  .overlay-toggler .navbar-toggler-icon {
+  
+    position:absolute;
+   margin-top:55px;
+   margin-right:5px;
+    font-size:20px;
+    border: none !important;
+    outline: none !important;
+    }
+  
+    #overlay .dropdown-menu a.dropdown-item[href="https://simennysaether.no/scando/scandoland.html"] {
+      font-size: 14px;
+    }
+    
+    #overlay .dropdown-menu a.dropdown-item[href="#"] {
+      font-size: 14px;
+    }
+  
+    #overlay .dropdown-item {
+      margin-top:5px;
+      margin-bottom: -15px; 
+      margin-left:-10px;
+    }
+  
+    
+.overlay-toggler .navbar-toggler-icon {
+
+  position:fixed;
+  right:4%;
+  top:0%;
+  font-size:20px;
+  border: none !important;
+  outline: none !important;
+  }
+  .overlay-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .overlay-nav li {
+    margin-bottom: 2rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .overlay-nav li a {
+    color: #a52d47;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family:'Roboto';
+    transition: color 0.3s ease;
+    
+  }
+  
+  .overlay-nav li a:hover {
+    color: #fff !important;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .overlay a.nav-link:hover {
+    color:#fff !important;
+  }
+  
+    
+
   /* fjerne alle elementer fra dropdown */
 
   .dropdown-menu {
@@ -158,7 +279,7 @@ body {
     padding: 0;
     border: none;
     box-shadow: none;
-    background-color: transparent; 
+    background-color: #a52d47; 
     color: white;
 }
 
@@ -243,6 +364,8 @@ body {
   #input {
     width:60%;
   }
+
+  /* FOoter */
   
   .footermain {
  color:white;
@@ -250,9 +373,15 @@ body {
  bottom:0;
  left:0;
  right:0;
-
   }
   
+.text-reset {
+  text-decoration:none;
+}
+
+.text-reset:hover {
+  border-bottom:1px solid #a52d47;
+}
   .heading,
   .paragraf {
     color: white;
@@ -449,14 +578,13 @@ width:400px;
       }
 
       #sendknapp {
-        background-color:#a52d47;
+        background-color:#fff;
         border:none;
         width:15%;
-        border-radius:10%;
       }
 
       #sendknapp:hover {
-        background-color:#538db6;
+        background-color:#a52d47;
       }
 
 /* Media queries Logo plassering */
@@ -497,6 +625,9 @@ width:400px;
         position:absolute;
     }
   }
+
+
+
 
 
   
