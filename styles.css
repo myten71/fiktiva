@@ -193,6 +193,8 @@ body {
     border: none !important;
     outline: none !important;
     }
+
+    
   
     #overlay .dropdown-menu a.dropdown-item[href="https://simennysaether.no/scando/scandoland.html"] {
       font-size: 14px;
@@ -317,6 +319,28 @@ body {
   }
   
 
+.heading, .paragraf {
+  margin-top:-70px;
+
+}
+
+.heading2, .paragraf2 {
+  margin-top:20px;
+  color:white;
+  color: white;
+  font-weight: lighter;
+}
+
+.heading3, .paragraf3 {
+  margin-top:0px;
+  color:white;
+  color: white;
+  font-weight: lighter;
+}
+
+.paragraf3 {
+  padding-bottom:50px;
+}
 
   
   /* Ulike farger på de ulike tjenestene?
@@ -379,13 +403,24 @@ body {
  left:0;
  right:0;
   }
+
+  #telefon:hover, #hus:hover, #brev:hover {
+    color:#a52d47;
+    transition:0.3s ease;
+    cursor:pointer;
+  }
   
 .text-reset {
   text-decoration:none;
 }
 
 .text-reset:hover {
-  border-bottom:1px solid #a52d47;
+  color:#a52d47;
+}
+
+.a text-reset:hover {
+  color:#a52d47;
+  
 }
   .heading,
   .paragraf {
@@ -631,6 +666,19 @@ width:400px;
     }
   }
 
+
+
+  /* media queries for footer mobil */
+  @media (max-width: 767px) {
+    .text-uppercase {font-size:10px;}
+    #oppdrag {font-size:10px;}
+    .socialslogo {font-size:20px;}
+a.text-reset {font-size:10px;
+}
+#hus, #brev, #telefon {
+  font-size:12px;
+}
+  }
 
 
 
