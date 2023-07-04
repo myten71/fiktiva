@@ -135,6 +135,12 @@ body {
 
   /* Mobile overlay Hamburger meny */
 
+  @media (max-width: 768px) { /*Bootstrap nav-links skaper en bug med fade-in overlay der linkene fra full-screen blir synlige, gjemmer de derfor totalt fra en gitt breakpoint(mobile)*/
+    #navcontainer {
+      display: none;
+    }
+  }
+
   #overlay {
     display: none;
     position: fixed;
@@ -144,8 +150,8 @@ body {
     height: 100%;
     z-index: 9999;
     overflow: hidden;
-    background: #2d2d2d;
     animation: fade-in 0.6s;
+   background-color:#2d2d2d; 
   
   }
 
@@ -168,7 +174,7 @@ body {
     outline: none !important;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23a52d47' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
     color: transparent !important;
-    position: absolute;
+    position: fixed;
     right: 2%;
   }
   
@@ -181,10 +187,9 @@ body {
   
   .overlay-toggler .navbar-toggler-icon {
   
-    position:absolute;
-   margin-top:55px;
-   margin-right:5px;
+    position:fixed;
     font-size:20px;
+    margin-top:60px;
     border: none !important;
     outline: none !important;
     }
