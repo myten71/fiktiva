@@ -238,10 +238,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    transition:0.6s ease;
   }
   
   .overlay-nav li a {
-    color: #a52d47;
+    color: #d68530;
     font-size: 1.2rem;
     text-decoration: none;
     font-family:'Roboto';
@@ -253,13 +254,21 @@ body {
     color: #fff !important;
     font-size: 1.2rem;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.6s ease;
   }
   
   .overlay a.nav-link:hover {
     color:#fff !important;
   }
   
+  .overlaydivider {
+  
+    background-color:#d68530;
+    height:1px;
+    z-index:999;
+    padding:5px;
+
+  }
     
 
   /* fjerne alle elementer fra dropdown */
@@ -392,7 +401,7 @@ body {
     height:1px;
     z-index:999;
     padding:1px;
-    width:70%;
+    min-width:70%;
     margin-top:50px;    
     position:absolute;
   }
@@ -680,7 +689,7 @@ width:400px;
 
   @media (max-width: 767px) {
     #logo {
-      left:4%;
+      left:7%; 
       position:absolute;
     }
   }
@@ -694,14 +703,33 @@ width:400px;
     .socialslogo {font-size:20px;}
 a.text-reset {font-size:10px;
 }
+
 .text-reset {
   display:flex;
   justify-content: center;
   align-items:center;
   flex-direction:column;
+  display:none;
+}
+
+#footertjenester, #footerlenker {
+  display:none;
 }
 #hus, #brev, #telefon {
   font-size:12px;
+}
+
+.divider {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#a52d47;
+  height:1px;
+  z-index:999;
+  padding:1px;
+  min-width:90%;
+  margin-top:50px;    
+  position:absolute;
 }
 
   }
