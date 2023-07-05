@@ -31,65 +31,69 @@
 </head>
 
 <body>
-    <!---Navbar-->
-    <div class="nav-wrapper">
-    <nav id="navbarmain" class="navbar navbar-expand-lg">
-                <img id="logo" src="logo.png" alt="Logo"class="d-inline-block align-text-top">
-              </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div id="navcontainer" class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Hjem</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="om.html">Om</a>
-              </li>
-              <div class="dropdown-center">
-                <button id="tjenester" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Tjenester
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Nettside</a></li>
-                  <li><a class="dropdown-item" href="#">Markedsføring</a></li>
-                  <li><a class="dropdown-item" href="#">SEO-optimalisering</a></li>
-                </ul>
-              </div>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Kontakt</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="referanser.html">Referanser</a>
-              </li>
-            </ul>
-          </div>
-      </nav>
-    </div>
-        <!--- NAVBAR for mobil overlay-->
-        <div id="overlay">
-    
-          <button onclick="overlay()" class="navbar-toggler text-white overlay-toggler" type="button" data-bs-target="#navcontainer" aria-controls="navcontainer" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon text-white"></span>
-          </button>
-          <ul class="overlay-nav">
-            <li><a class="nav-link active" aria-current="page" href="index.html">Hjem</a></li>
-            <li><a class="nav-link" href="om.html">Om</a></li>
-            <li><a class="nav-link" href="kontakt.html">Kontakt</a></li>
-            <li class="dropdown">
-              <a id="prosjekter" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Prosjekter
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="https://simennysaether.no/scando/scandoland.html">ScandoLand</a></li>
-                <li><a class="dropdown-item" href="#">Prosjekt X</a></li>
-                <li><a class="dropdown-item" href="#">Prosjekt Y</a></li>
+ <!---Navbar-->
+ <div class="nav-wrapper">
+  <nav id="navbarmain" class="navbar navbar-expand-lg">
+             <a class="navbar-brand" href="https://www.simennysaether.no/fiktiva/index.html"><img id="logo" src="logo.png" alt="Logo"class="d-inline-block align-text-top">
+            </a>
+        <button onclick="overlay()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navcontainer" aria-controls="navcontainer" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navcontainer" class="collapse navbar-collapse">
+          <ul class="navbar">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Hjem</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="om.html">Om</a>
+            </li>
+            <div class="dropdown-center">
+              <button id="tjenester" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tjenester
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Nettside</a></li>
+                <li><a class="dropdown-item" href="#">Markedsføring</a></li>
+                <li><a class="dropdown-item" href="#">SEO-optimalisering</a></li>
               </ul>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="kontakt.html">Kontakt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="referanser.html">Referanser</a>
             </li>
           </ul>
-          <script src="overlay.js"></script>
         </div>
+    </nav>
+  </div>
+
+
+  <!--- NAVBAR for mobil overlay-->
+  <div id="overlay">
+  
+    <button onclick="overlay()" class="navbar-toggler text-white overlay-toggler" type="button" data-bs-target="#navcontainer" aria-controls="navcontainer" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon text-white"></span>
+    </button>
+    
+    <ul class="overlay-nav">
+      <li><a class="nav-link active" aria-current="page" href="index.html">Hjem</a></li>
+      <li><a class="nav-link" href="om.html">Om</a></li>
+      <li><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+      <li class="dropdown">
+        <a id="prosjekter" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Prosjekter
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="https://simennysaether.no/scando/scandoland.html">ScandoLand</a></li>
+          <li><a class="dropdown-item" href="#">Wilhelmsen Web</a></li>
+          <li><a class="dropdown-item" href="#">Prosjekt Y</a></li>
+        </ul>
+      </li>
+    </ul>
+    <span class="overlaydivider"></span>
+    <script src="overlay.js"></script>
+  </div>
           <!-- kontakt-form -->
    <div id="kontaktformwrapper" class="container">
     <form method="POST" action="kontakt.php">
