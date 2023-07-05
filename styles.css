@@ -12,6 +12,8 @@ body {
     top: 0;
     
   }
+
+ 
   
   .nav-wrapper {
     justify-content: center;
@@ -25,10 +27,9 @@ body {
     position: absolute;
     width: 350px;
     height: 350px;
-    overflow: hidden;
-    left: 18%;
-    margin-bottom: 20px;
-    z-index:-10;
+    left: 19.7%;
+    top:-75%;
+
   }
   
   .nav {
@@ -343,13 +344,19 @@ body {
 }
 
   
-  /* Ulike farger på de ulike tjenestene?
-  #landing2 {
-    width:100%;
-    color:blue;
-  }
+ #landingstekst {
+  width:100%;
+ z-index:-1;
+ }
 
-  */
+ #landingstekst2 {
+  z-index:-1;
+ }
+
+ #landingstekst3 {
+  z-index:-1;
+ }
+
 
 
   #kontaktformwrapper {
@@ -508,12 +515,14 @@ width:400px;
 
   .carousel-item {
     left:5%;
+    z-index:-1;
   }
 
 .cardwrapper {
    position:absolute;
    top:30%;
-   left:20%;
+   left:22.5%;
+   z-index:-1;
 }
 
 
@@ -556,14 +565,17 @@ width:400px;
   }
 
 
-  /* Kontaktskjema - */ 
-   
-    .container {
+
+    .containerwrapper {
         max-width: 600px;
         margin: 0 auto;
+   
+        
       }
-    
 
+ 
+    
+  /* Kontaktskjema - */ 
       .kontaktoss {
         font-size: 24px;
         margin-bottom: 10px;
@@ -618,13 +630,13 @@ width:400px;
       }
 
       #sendknapp {
-        background-color:#fff;
+        background-color:#a52d47;
         border:none;
         width:15%;
       }
 
       #sendknapp:hover {
-        background-color:#a52d47;
+        background-color:#d68530;
       }
 
 /* Media queries Logo plassering */
@@ -666,6 +678,13 @@ width:400px;
     }
   }
 
+  @media (max-width: 767px) {
+    #logo {
+      left:4%;
+      position:absolute;
+    }
+  }
+
 
 
   /* media queries for footer mobil */
@@ -675,8 +694,43 @@ width:400px;
     .socialslogo {font-size:20px;}
 a.text-reset {font-size:10px;
 }
+.text-reset {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction:column;
+}
 #hus, #brev, #telefon {
   font-size:12px;
+}
+
+  }
+
+
+
+
+
+  @media (min-width: 1200px) {
+#landingstekst {
+  position:absolute;
+  top:40.5%;
+  left:50%;
+  width:40%;
+  
+}
+
+#landingstekst2 {
+  position:absolute;
+  top:100%;
+  left:50%;
+  width:40%;
+}
+
+#landingstekst3 {
+  position:absolute;
+  top:150%;
+  left:50%;
+  width:40%;
 }
   }
 

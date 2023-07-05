@@ -92,6 +92,7 @@
         </div>
           <!-- kontakt-form -->
    <div id="kontaktformwrapper" class="container">
+    <form method="POST" action="kontakt.php">
     <div class="row">
     <div id="input" class="mb-3">
       <div class="kontaktbio">
@@ -100,15 +101,15 @@
         </div>
         <form method="POST" action="kontakt.php"></form>
       <label for="exampleFormControlInput1" class="form-label"><i id="emojis" class="fa-solid fa-user"></i> Navn</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="navn og etternavn">
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="navn og etternavn">
     </div>
     <div id="input" class="mb-3">
       <label for="exampleFormControlInput1" class="form-label"><i id="emojis" class="fa-solid fa-envelope"></i> E-post</label>
-      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="navn@eksempel.no">
+      <input required type="email" class="form-control" id="exampleFormControlInput1" placeholder="navn@eksempel.no">
     </div>
     <div id="input" class="mb-3">
       <label for="exampleFormControlTextarea1" class="form-label"><i id="emojis" class="fa-solid fa-message"></i> Henvendelse</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
       <button type="submit" name="submit" id="sendknapp" type="button" class="btn btn-primary">Send</button>
     </form>
     </div>
