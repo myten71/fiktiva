@@ -75,11 +75,16 @@
     <button onclick="overlay()" class="navbar-toggler text-white overlay-toggler" type="button" data-bs-target="#navcontainer" aria-controls="navcontainer" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon text-white"></span>
     </button>
-    
+    <div class="overlaysocials">
+      <a class="overlayicons" href="https://www.instagram.com/simennys/"><i class="fa-brands fa-instagram"></i></a>
+      <a class="overlayicons" href="https://twitter.com/SimNys"><i class="fa-brands fa-twitter"></i></a>
+      <a class="overlayicons" href="https://github.com/myten71/"><i class="fa-brands fa-github"></i></a>
+    </div>
     <ul class="overlay-nav">
       <li><a class="nav-link active" aria-current="page" href="index.html">Hjem</a></li>
       <li><a class="nav-link" href="om.html">Om</a></li>
       <li><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+      <li><a class="nav-link" href="referanser.html">Referanser</a></li>
       <li class="dropdown">
         <a id="prosjekter" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Prosjekter
@@ -91,44 +96,57 @@
         </ul>
       </li>
     </ul>
-    <span class="overlaydivider"></span>
+    <div class="overlaycontact">
+      <h6 class="overlayheading">Contact</h6>
+      <p><i class="overlayparagraph"></i> Bergen, Vestland, Norge</p>
+      <p>
+        <i class="fas fa-envelope me-3"></i>
+        simennysaether@gmail.com
+      </p>
+      <p><i class="fas fa-phone me-3"></i> +47 40632668</p>
+    </div>
     <script src="overlay.js"></script>
   </div>
           <!-- kontakt-form -->
-   <div id="kontaktformwrapper" class="container">
-    <form method="POST" action="kontakt.php">
-    <div class="row">
-    <div id="input" class="mb-3">
-      <div class="kontaktbio">
-        <h1 class="kontaktoss">Kontakt oss gjerne!</h1>
-        <p class="contactoss">Dersom du har spørsmål vedrørende våre tjenester, ønsker pristilbud eller har andre spørsmål så kan du benytte deg av kontaktskjemaet så vil vi komme tilbake til deg snarest.</p>
-        </div>
-        <form method="POST" action="kontakt.php"></form>
-      <label for="exampleFormControlInput1" class="form-label"><i id="emojis" class="fa-solid fa-user"></i> Navn</label>
-      <input type="text" class="form-control" id="name" name="name" placeholder="navn og etternavn">
-    </div>
-    <div id="input" class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label"><i id="emojis" class="fa-solid fa-envelope"></i> E-post</label>
-      <input required type="email" id="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="navn@eksempel.no">
-    </div>
-    <div id="input" class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label"><i id="emojis" class="fa-solid fa-message"></i> Henvendelse</label>
-      <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
-      <button type="submit" name="submit" id="sendknapp" type="button" class="btn btn-primary">Send</button>
-    </form>
-    </div>
-    </div>
-      <!--Google map-->
-      <div class="row">
-        <div class="mapwrap">
-<div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 150px">
-  <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7885.6210371791785!2d5.3299651!3d60.388984099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cfea43b3317d3%3A0x583d19ca7af47f9!2sSentrum%2C%20Bergen!5e0!3m2!1sno!2sno!4v1688315800258!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-      class="w-100" height="400" allowfullscreen="" loading="lazy"></iframe>
-</div>
-</div>
-      </div>
-    </div>
+          <div class="container">
+            <div class="row align-items-center justify-content-center vh-100">
+              <div class="col-md-6 formwrapper">
+                <form method="POST" action="kontakt.php">
+                  <div class="row">
+                    <div class="col-12 mb-3">
+                      <div class="kontaktbio">
+                        <h1 class="kontaktoss">Kontakt oss gjerne!</h1>
+                        <p class="contactoss">Dersom du har spørsmål vedrørende våre tjenester, ønsker pristilbud eller har andre spørsmål så kan du benytte deg av kontaktskjemaet så vil vi komme tilbake til deg snarest.</p>
+                      </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                      <label for="name" class="form-label"><i id="emojis" class="fa-solid fa-user"></i> Navn</label>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Navn og etternavn">
+                    </div>
+                    <div class="col-12 mb-3">
+                      <label for="email" class="form-label"><i id="emojis" class="fa-solid fa-envelope"></i> E-post</label>
+                      <input required type="email" id="email" name="email" class="form-control" placeholder="navn@eksempel.no">
+                    </div>
+                    <div class="col-12 mb-3">
+                      <label for="message" class="form-label"><i id="emojis" class="fa-solid fa-message"></i> Henvendelse</label>
+                      <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" name="submit" id="sendknapp" class="btn btn-primary">Send</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- GOOGLE MAPS -->
+              <div class="col-md-6">
+                <div class="mapwrap">
+                  <div id="googlemap" class="z-depth-1-half map-container" style="height: 100%">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7885.6210371791785!2d5.3299651!3d60.388984099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cfea43b3317d3%3A0x583d19ca7af47f9!2sSentrum%2C%20Bergen!5e0!3m2!1sno!2sno!4v1688315800258!5m2!1sno!2sno" width="200" height="90" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100 h-100"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
 <!--Bootstrap + Custom scripts-->
 <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -201,7 +219,7 @@
               </div>
             
       
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <div id="footercontactinfo" class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
                 <p><i class="fas fa-home me-3"></i> Bergen, Vestland, Norge</p>
                 <p>

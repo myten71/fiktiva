@@ -48,6 +48,7 @@ body {
   }
   
 
+
   
   #tjenester {
     color: white;
@@ -168,12 +169,20 @@ body {
       transform: translateX(0);
     }
   }
+
+  #overlay .overlay-nav .dropdown-menu {
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    background-color: transparent !important; 
+    color: white;
+}
   
 
   .navbar-toggler {
     border: none !important;
     outline: none !important;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23a52d47' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0.647, 0.176, 0.278, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
     color: transparent !important;
     position: fixed;
     right: 2%;
@@ -182,7 +191,7 @@ body {
   .navbar-toggler-icon {
     border: none !important;
     outline: none !important;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23a52d47' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0.647, 0.176, 0.278, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
     color: transparent !important;
   }
   
@@ -193,22 +202,24 @@ body {
     margin-top:60px;
     border: none !important;
     outline: none !important;
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(165,45,71, 0.9999)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
     }
 
     
   
     #overlay .dropdown-menu a.dropdown-item[href="https://simennysaether.no/scando/scandoland.html"] {
-      font-size: 14px;
+      font-size: 12px;
     }
     
     #overlay .dropdown-menu a.dropdown-item[href="#"] {
-      font-size: 14px;
+      font-size: 12px;
     }
   
     #overlay .dropdown-item {
       margin-top:5px;
       margin-bottom: -15px; 
       margin-left:-10px;
+      font-size:12px;
     }
   
     
@@ -242,7 +253,7 @@ body {
   }
   
   .overlay-nav li a {
-    color: #d68530;
+    color: #a52d47;
     font-size: 1.2rem;
     text-decoration: none;
     font-family:'Roboto';
@@ -367,21 +378,6 @@ body {
  }
 
 
-
-  #kontaktformwrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 150px);
-  }
-
-  #map-container-google-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 150px);
-  }
-  
   #blink {
     width: 600px;
     height: 500px;
@@ -401,7 +397,7 @@ body {
     height:1px;
     z-index:999;
     padding:1px;
-    min-width:70vh;
+    min-width:70%;
     margin-top:50px;    
     position:absolute;
   }
@@ -419,6 +415,7 @@ body {
  left:0;
  right:0;
   }
+
 
   #telefon:hover, #hus:hover, #brev:hover {
     color:#a52d47;
@@ -449,21 +446,7 @@ body {
     font-weight:lighter;
   }
 
-
-  .mapwrap {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    left:25%;
-    top:50%;
-    position:absolute;
-    z-index:-1;
-  }
-  
-  #map-container-google-1 {
-    width:30%;
-  }
-
+.form 
 
 .omoss {
     justify-content: center;
@@ -582,9 +565,48 @@ width:400px;
         
       }
 
- 
+/* Overlay socials */
+
+.overlaysocials {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+ margin-top:40px;
+}
+.overlaysocials a {
+  color: inherit; 
+  text-decoration: none; 
+  transition: color 0.6s ease; 
+  color:#fff;
+  font-size:30px;
+  margin:15px;
+}
+
+.overlaysocials a:hover {
+  color: #a52d47; 
+  transition: color 0.6s ease; 
+}
+
+.overlaysocials a i {
+  transition: color 0.3s ease; 
+}
+
+.overlaysocials a:hover i {
+  color: #a52d47; 
+  transition: color 0.6s ease; 
+}
+
+
+ /* google maps */
+.mapwrap {
+  height:380px;
+}
     
   /* Kontaktskjema - */ 
+
+  #kontaktcontainer {
+    height:calc(150px - 100vh);
+  }
       .kontaktoss {
         font-size: 24px;
         margin-bottom: 10px;
@@ -689,8 +711,23 @@ width:400px;
 
   @media (max-width: 767px) {
     #logo {
-      left:7%; 
-      position:absolute;
+      display: flex;
+      justify-content: center;
+      left:7%;
+    }
+
+    .mapwrap {
+      height:150px;
+    }
+
+    
+  }                                                                                                                                                                   
+
+  @media (max-width: 896px) {
+    #logo {
+      display:flex;
+      justify-content: center;
+      left:0%;
     }
   }
 
@@ -702,6 +739,10 @@ width:400px;
     #oppdrag {font-size:10px;}
     .socialslogo {font-size:20px;}
 a.text-reset {font-size:10px;
+}
+
+#footercontactinfo {
+  font-size:10px;
 }
 
 .text-reset {
