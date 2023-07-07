@@ -10,7 +10,7 @@ var customerReviews = [
       review: "Wilhelmsen Web har vært en uvurderlig partner i utviklingen av vår nettbutikk. Fra start til slutt var de engasjerte, profesjonelle og ekstremt kunnskapsrike. De skapte en brukervennlig og visuelt tiltalende nettbutikk."
     },
     {
-      name: "Terri AS",
+      name: "Explore AS",
       stars: 5,
       review: "Vi ønsket å oppgradere vår eksisterende nettside og valgte Wilhelmsen Web som vår samarbeidspartner. Vi ble imponert over deres profesjonalitet og ekspertise. De forstod våre behov svært godt!"
     }
