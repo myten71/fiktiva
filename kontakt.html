@@ -11,20 +11,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <script src="simscript.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap" rel="stylesheet">
@@ -34,7 +23,7 @@
  <!---Navbar-->
  <div class="nav-wrapper">
   <nav id="navbarmain" class="navbar navbar-expand-lg">
-             <a class="navbar-brand" href="https://www.simennysaether.no/fiktiva/index.html"><img id="logo" src="logo.png" alt="Logo"class="d-inline-block align-text-top">
+             <a class="navbar-brand" href="https://www.simennysaether.no/fiktiva/index.html"><img id="logo" src="logo.png" alt="Logo"class="d-inline-block">
             </a>
         <button onclick="overlay()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navcontainer" aria-controls="navcontainer" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -73,7 +62,15 @@
   <div id="overlay">
   
     <button onclick="overlay()" class="navbar-toggler text-white overlay-toggler" type="button" data-bs-target="#navcontainer" aria-controls="navcontainer" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon text-white"></span>
+      <svg class="navbar-toggler-icon text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+        <path stroke="url(#gradient)" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/>
+        <defs>
+          <linearGradient id="gradient" gradientTransform="rotate(135)">
+            <stop offset="0%" stop-color="hsla(0, 0%, 91%, 1)" />
+            <stop offset="100%" stop-color="hsla(347, 57%, 41%, 1)" />
+          </linearGradient>
+        </defs>
+      </svg>
     </button>
     <div class="overlaysocials">
       <a class="overlayicons" href="https://www.instagram.com/simennys/"><i class="fa-brands fa-instagram"></i></a>
@@ -99,7 +96,8 @@
     <div class="overlaysocials2">
       <a href="https://www.google.com/maps/place/Media+City+Bergen+AS/@60.3854665,5.3305665,17z/data=!3m1!4b1!4m6!3m5!1s0x463cfc04e96f5a39:0xda17ce282c8e9338!8m2!3d60.3854665!4d5.3327552!16s%2Fg%2F11cmhx6d_r?hl=no&entry=ttu" class="overlayicons2" href="https://www.instagram.com/simennys/" style="text-decoration: none;"><i class="fas fa-home me-3"></i></a>
       <a class="overlayicons2" href="mailto:simennysaether.no@gmail.com" style="text-decoration: none;"><i class="fas fa-envelope me-3"></i></a>
-      <a class="overlayicons2" href="https://github.com/myten71/" style="text-decoration: none;"><i class="fas fa-phone me-3"></i></a>
+      <a class="overlayicons2" href="tel:+47 40632669" style="text-decoration: none;"><i class="fas fa-phone me-3"></i></a>
+
     </div>
     <script src="overlay.js"></script>
   </div>

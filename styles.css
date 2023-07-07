@@ -159,7 +159,7 @@ body {
 .overlay-nav {
   position: fixed;
   top: 53%;
-  left: 50%;
+  left: 51%;
   transform: translate(-50%, -50%);
   text-decoration:none;
 }
@@ -577,7 +577,7 @@ width:400px;
   display:flex;
   justify-content: center;
   align-items:center;
-  margin-top:40px;
+  margin-top:52px;
   z-index:999;
 }
 
@@ -587,7 +587,7 @@ width:400px;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  margin-bottom:40px;
+  margin-bottom:52px;
 }
 
 .overlayicons2 {
@@ -596,7 +596,7 @@ width:400px;
 }
 
 .overlaysocials2 a {
-  font-size:30px;
+  font-size:20px;
 }
 
 .overlaysocials2 a.overlayicons2 {
@@ -606,7 +606,7 @@ width:400px;
 .overlaysocials a {
   text-decoration: none; 
   transition: color 0.6s ease; 
-  font-size:35px;
+  font-size:25px;
   margin:8px;
 }
 
@@ -744,9 +744,8 @@ width:400px;
 
   @media (max-width: 767px) {
     #logo {
-      display: flex;
-      justify-content: center;
-      left:7%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
     .paragraf, .paragraf2, .paragraf3 {
@@ -756,6 +755,8 @@ width:400px;
 
     .mapwrap {
       height:150px;
+      width:100%;
+      margin-left:-3px;
     }
 
     
@@ -763,9 +764,9 @@ width:400px;
 
   @media (max-width: 896px) {
     #logo {
-      display:flex;
-      justify-content: center;
-      left:0%;
+      left: 45%;
+      transform: translate(-50%, -50%);
+      top:42%;
     }
   }
 
