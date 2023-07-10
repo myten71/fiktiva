@@ -12,4 +12,3 @@
       navContainer.classList.add("show");
     }
   }
-
