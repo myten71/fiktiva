@@ -383,7 +383,12 @@ body {
   color:white;
   font-family:'Roboto';
   font-weight: lighter;
+  line-height: 1.9em;
+  font-size:15px;
+  margin-top:20px;
 }
+
+
 
 
 
@@ -524,6 +529,9 @@ height:70vh;
 
   /* Om oss -seksjon */ 
 
+  #aboutus {
+    margin-left:-70px;
+  }
 
 #om {
   margin-top:50px;
@@ -543,9 +551,13 @@ height:70vh;
   color:white;
   font-weight:lighter;
   font-family:'Roboto';
-  line-height:1.7em;
+  line-height:1.9em;
   width:100%;
-  font-size:16px;
+  font-size:18px;
+}
+
+#aboutus {
+  width:900px;
 }
 
 
@@ -825,13 +837,21 @@ width:400px;
    } 
 
    .paragraf4 {
-    font-size:13px;
+    font-size:15px;
     line-height:1.7em;
     justify-content: center;
     align-items:center;
    }
 
    #biowrapper {
+    justify-content: center;
+    display:flex;
+   }
+
+   #aboutus {
+    justify-content: center;
+    align-items:center;
+    margin-left:-5px;
    }
 
   }                                                                                                                                                                   
