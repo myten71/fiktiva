@@ -413,15 +413,18 @@ body {
   
  #landingstekst {
   width:100%;
- z-index:-1;
+ z-index:5;
+ margin-top:-110px;
  }
 
  #landingstekst2 {
-  z-index:-1;
+  z-index:5;
+  margin-top:-130px;
  }
 
  #landingstekst3 {
   z-index:-1;
+  margin-top:-50px;
  }
 
 
@@ -444,12 +447,12 @@ height:70vh;
 
  .heading {
   margin-top:20px;
-  font-size:60px;
+  font-size:50px;
  }
 
 
- #heading2 {
-  justify-content: flex-start;
+ .heading2 {
+  font-size:50px;
  }
 
   .dividercontainer {
@@ -830,6 +833,7 @@ width:400px;
       height:150px;
       width:100%;
       margin-left:-3px;
+      margin-bottom:5px;
     }
 
    .heading4 {
@@ -837,8 +841,8 @@ width:400px;
    } 
 
    .paragraf4 {
-    font-size:15px;
-    line-height:1.7em;
+    font-size:14.5px;
+    line-height:1.6em;
     justify-content: center;
     align-items:center;
    }
@@ -853,6 +857,11 @@ width:400px;
     align-items:center;
     margin-left:-5px;
    }
+
+   #contactformwrapper {
+    margin-top:60px;
+  }
+
 
   }                                                                                                                                                                   
 
@@ -909,6 +918,13 @@ a.text-reset {font-size:10px;
   margin-top:50px;    
   position:absolute;
 }
+
+.cardwrapper {
+  position:absolute;
+  top:70%;
+  margin-bottom:100px;
+}
+
 
   }
 

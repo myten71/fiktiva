@@ -35,7 +35,7 @@
  <!---Navbar-->
  <div class="nav-wrapper">
   <nav id="navbarmain" class="navbar navbar-expand-lg">
-             <a class="navbar-brand" href="https://www.simennysaether.no/fiktiva/index.html"><img id="logo" src="logo.png" alt="Logo"class="d-inline-block align-text-top">
+             <a class="navbar-brand" href="https://www.simennysaether.no/fiktiva/index.html"><img id="logo" src="logo.png" alt="Logo"class="d-inline-block">
             </a>
         <button onclick="overlay()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navcontainer" aria-controls="navcontainer" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -43,7 +43,7 @@
         <div id="navcontainer" class="collapse navbar-collapse">
           <ul class="navbar">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Hjem</a>
+              <a class="nav-link" href="index.html">Hjem</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="om.html">Om</a>
@@ -59,10 +59,10 @@
               </ul>
             </div>
             <li class="nav-item">
-              <a class="nav-link" href="kontakt.html">Kontakt</a>
+              <a class="nav-link"  aria-current="page" href="kontakt.html">Kontakt</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="referanser.html">Referanser</a>
+              <a class="nav-link active" href="referanser.html">Referanser</a>
             </li>
           </ul>
         </div>
@@ -74,13 +74,26 @@
   <div id="overlay">
   
     <button onclick="overlay()" class="navbar-toggler text-white overlay-toggler" type="button" data-bs-target="#navcontainer" aria-controls="navcontainer" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon text-white"></span>
+      <svg class="navbar-toggler-icon text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+        <path stroke="url(#gradient)" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/>
+        <defs>
+          <linearGradient id="gradient" gradientTransform="rotate(135)">
+            <stop offset="0%" stop-color="hsla(0, 0%, 91%, 1)" />
+            <stop offset="100%" stop-color="hsla(347, 57%, 41%, 1)" />
+          </linearGradient>
+        </defs>
+      </svg>
     </button>
-    
+    <div class="overlaysocials">
+      <a class="overlayicons" href="https://www.instagram.com/simennys/"><i class="fa-brands fa-instagram"></i></a>
+      <a class="overlayicons" href="https://twitter.com/SimNys"><i class="fa-brands fa-twitter"></i></a>
+      <a class="overlayicons" href="https://github.com/myten71/"><i class="fa-brands fa-github"></i></a>
+    </div>
     <ul class="overlay-nav">
-      <li><a class="nav-link active" aria-current="page" href="index.html">Hjem</a></li>
+      <li><a class="nav-link" href="index.html">Hjem</a></li>
       <li><a class="nav-link" href="om.html">Om</a></li>
       <li><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+      <li><a class="nav-link active" href="referanser.html">Referanser</a></li>
       <li class="dropdown">
         <a id="prosjekter" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Prosjekter
@@ -92,42 +105,53 @@
         </ul>
       </li>
     </ul>
-    <span class="overlaydivider"></span>
+    <div class="overlaysocials2">
+      <a href="https://www.google.com/maps/place/Media+City+Bergen+AS/@60.3854665,5.3305665,17z/data=!3m1!4b1!4m6!3m5!1s0x463cfc04e96f5a39:0xda17ce282c8e9338!8m2!3d60.3854665!4d5.3327552!16s%2Fg%2F11cmhx6d_r?hl=no&entry=ttu" class="overlayicons2" href="https://www.instagram.com/simennys/" style="text-decoration: none;"><i class="fas fa-home me-3"></i></a>
+      <a class="overlayicons2" href="mailto:simennysaether.no@gmail.com" style="text-decoration: none;"><i class="fas fa-envelope me-3"></i></a>
+      <a class="overlayicons2" href="tel:+47 40632669" style="text-decoration: none;"><i class="fas fa-phone me-3"></i></a>
+
+    </div>
     <script src="overlay.js"></script>
   </div>
     
  <!--- referanser + customer reviews-->
  <div id="carouselExampleFade" class="carousel slide carousel">
-    <div class="cardwrapper">
-        <div class="card" style="width: 18rem; height:16rem;">
-            <div class="card-body">
-              <h5 class="card-title">Fairy AS</h5>
-              <span class="stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i></span>
-              <p class="card-text">"Vi hadde gleden av å samarbeide med Wilhelmsen Web for utviklingen av vår nye nettside, og vi er svært fornøyde med resultatet. Vi anbefaler gjerne Wilhelmsen Web til alle som trenger en pålitelig nettsideutvikler."</p>
-            </div>
-          </div>
-          </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="webdesign.png" class="d-block carousel-image" alt="...">
 
-      </div>
-      <div class="carousel-item">
-        <img src="fiktiv2.png" class="d-block carousel-image" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="fiktiv4.png" class="d-block carousel-image" alt="...">
+  <div class="carousel-inner d-flex flex-wrap vh-80">
+    <div class="carousel-item active">
+      <img src="webdesign.png" class="d-block carousel-image" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="fiktiv2.png" class="d-block carousel-image" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="fiktiv4.png" class="d-block carousel-image" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span id="prevknapp" class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span id="fremknapp" class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  <div class="cardwrapper">
+    <div class="card" style="width: 18rem; height:16rem;">
+      <div class="card-body">
+        <h5 class="card-title">Fairy AS</h5>
+        <span class="stars">
+          <i class="fa-sharp fa-solid fa-star"></i>
+          <i class="fa-sharp fa-solid fa-star"></i>
+          <i class="fa-sharp fa-solid fa-star"></i>
+          <i class="fa-sharp fa-solid fa-star"></i>
+          <i class="fa-sharp fa-solid fa-star"></i>
+        </span>
+        <p class="card-text">"Vi hadde gleden av å samarbeide med Wilhelmsen Web for utviklingen av vår nye nettside, og vi er svært fornøyde med resultatet. Vi anbefaler gjerne Wilhelmsen Web til alle som trenger en pålitelig nettsideutvikler."</p>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-      <span  id="prevknapp" class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button  class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-      <span id="fremknapp" class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
+</div>
 
 
   <!--Bootstrap + Custom scripts-->
