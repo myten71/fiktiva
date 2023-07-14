@@ -572,6 +572,43 @@ width:400px;
  
     z-index:-1;
 }
+
+.card {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#prosjektknapper {
+  background-color:#a52d47;
+  border:none;
+}
+
+.card-body {
+  background-color: transparent !important;
+}
+
+.card-img-top {
+  background-size: cover;
+  background-position: center;
+}
+
+.card-text {
+  color:white;
+}
+
+.card-title {
+  color:white !important;
+}
+
+#kundeomtaler {
+  height:75vh;
+}
+
+#omtalewrapper{
+  margin-top:-30px;
+}
+
 .carousel-image {
     max-width: 100%;
     display: block;
@@ -863,6 +900,19 @@ width:400px;
   }
 
 
+  #landingstekst2 {
+    margin-top:20px;
+  }
+
+  .heading3 {
+    font-size:40px;
+  }
+
+  #landingstekst3 {
+    margin-top:30px;
+    z-index:5;
+  }
+
   }                                                                                                                                                                   
 
   @media (max-width: 896px) {
@@ -885,6 +935,10 @@ a.text-reset {font-size:10px;
 
 #footercontactinfo {
   font-size:10px;
+  justify-content: center;
+  align-items:center;
+  flex-direction:column;
+  left:20%;
 }
 
 .text-reset {
@@ -899,11 +953,25 @@ a.text-reset {font-size:10px;
   display:none;
 }
 
+
 #lenker {
   display:none;
 }
 #hus, #brev, #telefon {
   font-size:12px;
+  justify-content: center;
+}
+
+#brev {
+  margin-left:0px;
+}
+
+#hus {
+  margin-left:-21px;
+}
+
+#telefon {
+  margin-left:-71px;
 }
 
 .divider {
@@ -919,11 +987,6 @@ a.text-reset {font-size:10px;
   position:absolute;
 }
 
-.cardwrapper {
-  position:absolute;
-  top:70%;
-  margin-bottom:100px;
-}
 
 
   }
@@ -943,6 +1006,7 @@ a.text-reset {font-size:10px;
 
 #landingstekst2 {
   position:absolute;
+
   top:100%;
   left:50%;
   width:40%;
